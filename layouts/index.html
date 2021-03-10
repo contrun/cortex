@@ -4,7 +4,7 @@
     {{.Content}}
     <ul class="all-posts">
       {{range .Site.RegularPages}}
-      <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+      <li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
       {{end}}
     </ul>
   </div>

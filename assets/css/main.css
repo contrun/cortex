@@ -119,14 +119,20 @@ header {
   padding: 32px;
 }
 
-a {
+a[href^=http] {
   text-decoration: none;
   cursor: pointer;
   color: rgba(10, 132, 255, 1);
 }
 
+a:not([href^=http]) {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgba(10, 132, 127, 1);
+}
+
 a.active {
-  background-color: rgba(10, 132, 255, 0.15);
+  background-color: rgba(10, 132, 0, 0.15);
 }
 
 a:hover {
